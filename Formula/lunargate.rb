@@ -10,16 +10,16 @@ class Lunargate < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lunargate-ai/gateway-dev/releases/download/v0.0.2/lunargate_0.0.2_darwin_amd64.tar.gz"
-      sha256 "2e25c56a7a51a7c9c70079eaf873ba96ce5bb0307e2f555fa874b5ec40b5a3bd"
+      url "https://github.com/lunargate-ai/gateway/releases/download/v0.0.2/gateway_0.0.2_darwin_amd64.tar.gz"
+      sha256 "c939468bcd9dfeb66a23697fbe89e05bd237c20f5c6b796d461524926541fb13"
 
       def install
         bin.install "lunargate"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lunargate-ai/gateway-dev/releases/download/v0.0.2/lunargate_0.0.2_darwin_arm64.tar.gz"
-      sha256 "99ae90bef5cbf7de2db1958f715870cce757e0e13ecc7159f347eef727a90439"
+      url "https://github.com/lunargate-ai/gateway/releases/download/v0.0.2/gateway_0.0.2_darwin_arm64.tar.gz"
+      sha256 "473384f816ae98d090160cdfb08e0e8da9cc69c056fc31215737e10e9dcfcf99"
 
       def install
         bin.install "lunargate"
@@ -30,8 +30,8 @@ class Lunargate < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/lunargate-ai/gateway-dev/releases/download/v0.0.2/lunargate_0.0.2_linux_amd64.tar.gz"
-        sha256 "d08e6f18d5aa9b9611502bad7714c1ddcb247a60ffd5d4c094c5df0e6cb29e36"
+        url "https://github.com/lunargate-ai/gateway/releases/download/v0.0.2/gateway_0.0.2_linux_amd64.tar.gz"
+        sha256 "4d897734f2980cce5bac89fa94b156a17c87675a9c4984b5bed83838db43f860"
 
         def install
           bin.install "lunargate"
@@ -40,8 +40,8 @@ class Lunargate < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/lunargate-ai/gateway-dev/releases/download/v0.0.2/lunargate_0.0.2_linux_arm64.tar.gz"
-        sha256 "60bab3495f920da0afcf8b92d0b48ddb331143d6d7699536318c4f9030e43259"
+        url "https://github.com/lunargate-ai/gateway/releases/download/v0.0.2/gateway_0.0.2_linux_arm64.tar.gz"
+        sha256 "2b93f9e9f0c51d2141a1be8ab595af55e22be53512d7ec6d03206f70d84aa565"
 
         def install
           bin.install "lunargate"
