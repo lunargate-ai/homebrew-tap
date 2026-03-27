@@ -5,21 +5,21 @@
 class Lunargate < Formula
   desc "High-performance self-hosted AI gateway (OpenAI-compatible) with routing, retries, and streaming"
   homepage "https://github.com/lunargate-ai/gateway"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lunargate-ai/gateway/releases/download/v0.1.0/gateway_0.1.0_darwin_amd64.tar.gz"
-      sha256 "a1fdb99d399368618e0deea902f0f66771fa69304f55d49328b84f95cdcdbad4"
+      url "https://github.com/lunargate-ai/gateway/releases/download/v0.2.0/gateway_0.2.0_darwin_amd64.tar.gz"
+      sha256 "1630c967125f9df59488b7045a73c2e37aa90c9f089ea87dee0763b812ec6097"
 
       def install
         bin.install "lunargate"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lunargate-ai/gateway/releases/download/v0.1.0/gateway_0.1.0_darwin_arm64.tar.gz"
-      sha256 "04bc480fcd62c46a273b6a1f828b0911e535ecc698396231184aef1605d10295"
+      url "https://github.com/lunargate-ai/gateway/releases/download/v0.2.0/gateway_0.2.0_darwin_arm64.tar.gz"
+      sha256 "6c6e5df915278268861ac95c03654232fc24ae6bf4cdbd12636ba50a3f6e7d5f"
 
       def install
         bin.install "lunargate"
@@ -30,8 +30,8 @@ class Lunargate < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/lunargate-ai/gateway/releases/download/v0.1.0/gateway_0.1.0_linux_amd64.tar.gz"
-        sha256 "a61281cce48db74a601e3df114dc41ea53650845393dc1d33da02353b0cc8c61"
+        url "https://github.com/lunargate-ai/gateway/releases/download/v0.2.0/gateway_0.2.0_linux_amd64.tar.gz"
+        sha256 "74ec19c0a2db82047631b1b922a6323188309a8323c6a1a37d68d48d8195706a"
 
         def install
           bin.install "lunargate"
@@ -40,8 +40,8 @@ class Lunargate < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/lunargate-ai/gateway/releases/download/v0.1.0/gateway_0.1.0_linux_arm64.tar.gz"
-        sha256 "4ed95cf77c9d26dde10913d7edbffdbc98f979f7f963deb1992e54f08e0d4aea"
+        url "https://github.com/lunargate-ai/gateway/releases/download/v0.2.0/gateway_0.2.0_linux_arm64.tar.gz"
+        sha256 "bd18762b70421d0e7ca76fa473759f941a58221fe6d536c1b4fbf57e97109e2d"
 
         def install
           bin.install "lunargate"
